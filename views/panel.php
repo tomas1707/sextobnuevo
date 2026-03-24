@@ -1,4 +1,8 @@
-<?php require 'views/includes/caja.php'?>
+<?php 
+  require 'views/includes/caja.php';
+  require 'views/includes/textbox.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,6 +71,18 @@
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
+
+            <?php 
+              textbox("password","pass1","Ingresa tu contraseña",true);
+              textbox("password","pass2","ingesa tu password",false);
+              textbox("password","pass3","escribe tu pass",true);
+              textbox("password","pass4","pon tu contraseña",true);
+              textbox("password","pass5","ingresa tu clave",true);
+              textbox("password","pass6","digita tu clave",true);
+              textbox("password","pass7","introcuduce tu pass",true);
+              textbox("password","pass8","proporciona tu pass",true);
+            ?>
+            
             <!-- Componente Caja -->
             <?php mostrarCaja('azul', '150', 'Nuevas Ordenes', 'http://google.com','bolso'); ?>
             <!-- Componente Caja -->
